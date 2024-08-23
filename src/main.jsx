@@ -12,6 +12,8 @@ import Message from "./Components/Messages/Messages.jsx";
 import Notification from "./Components/Notifications/Notifications.jsx";
 import Create from "./Components/Create/Create.jsx";
 import Profile from "./Components/Profile/Profile.jsx";
+import Threads from "./Components/Threads/Threads.jsx";
+import More from "./Components/More/More.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,11 +37,11 @@ const router = createBrowserRouter([
         element: <Reels />,
       },
       {
-        path: "message",
+        path: "messages",
         element: <Message />,
       },
       {
-        path: "notification",
+        path: "notifications",
         element: <Notification />,
       },
       {
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      }, 
+      {
+        path: "threads",
+        element: <Threads />,
+      }, 
+      {
+        path: "more",
+        element: <More />,
       }, 
     ],
   },
