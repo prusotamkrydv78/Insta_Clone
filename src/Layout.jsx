@@ -12,7 +12,7 @@ const Layout = () => {
       <div className="w-[15rem] h-lvh fixed border-r-[1px] border-[#878787] py-[35px] px-[15px] flex flex-col justify-between">
         <Header />
       </div>
-      <div className="ml-[15rem]">
+      <div className="ml-[15rem]  overflow-x-hidden">
         <Outlet />
       </div>
     </div>

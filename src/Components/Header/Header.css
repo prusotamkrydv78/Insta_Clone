@@ -20,7 +20,7 @@
   transition: 0.1s linear font-weight;
 }
 .navigator > div:hover span{
-    font-size: 28px;
+    font-size: 27px;
 }
 .navigator > div span {
     font-size: 25px;
