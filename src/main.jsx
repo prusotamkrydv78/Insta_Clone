@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
+
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout.jsx";
@@ -23,11 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-      },
-      {
-        path: "/search",
-        element: <Search />,
-      },
+      }, 
       {
         path: "explore",
         element: <Explore />,
@@ -51,21 +47,19 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
-      }, 
+      },
       {
         path: "threads",
         element: <Threads />,
-      }, 
+      },
       {
         path: "more",
         element: <More />,
-      }, 
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+  <RouterProvider router={router} />
 );

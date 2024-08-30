@@ -19,19 +19,49 @@
   font-size: 16px;
   transition: 0.1s linear font-weight;
 }
-.navigator > div:hover span{
-    font-size: 27px;
+.navigator > div:hover span {
+  font-size: 27px;
 }
 .navigator > div span {
-    font-size: 25px;
-    height: 2rem;
-    width: 2rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    transition: .1s linear;
-    font-weight: bolder;
+  font-size: 25px;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: 0.1s linear;
+  font-weight: bolder;
 }
 .activeLink {
   font-weight: bold !important;
 }
+.navToggled h4 {
+  display: none;
+}
+.navToggledIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0 !important;
+}
+.toggledContent {
+  width: calc(100% - 240px);
+  margin-left: 160px;
+}
+.notToggledContent {
+  width: calc(100% - 15rem);
+}
+.searchTab{
+  position: absolute;
+    left: 5rem; 
+    width: 25rem;
+    height: 100vh !important;
+    top: 0;
+    box-shadow: 5px 0px 15px 5px #cec9c9;
+    background-color: white ;
+    border: none; 
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+ 

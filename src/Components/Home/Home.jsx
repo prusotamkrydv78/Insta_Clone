@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import NavToggleContext from "../../Context/NavToggleContext/NavToggleContext";
 import "./Home.css";
 import { IoIosMore } from "react-icons/io";
 import followedImg from "./image.png";
-import video from "./video.mp4";
+import video from "./video1.mp4";
 import { FaRegHeart } from "react-icons/fa6";
 import { FiMessageCircle, FiSend } from "react-icons/fi";
 import saved from "./saved.png";
 const Home = () => {
+  const { navToggle, setNavToggle } = useContext(NavToggleContext);
+  useEffect(() => {
+    setNavToggle(false);
+  }, []);
   return (
     <div className="flex">
       <div className="h-lvh w-[48rem] py-[1.5rem] px-[10px]">
@@ -75,7 +80,7 @@ const FollowerPosts = () => {
         </div>
       </div>
       <div className="h-[585px] w-full flex justify-center bg-black rounded-md ">
-        <video src={video} autoPlay loop muted className="w-[468px]"></video>
+        {/* <video src={video}  loop muted className="w-[468px]"></video> */}
       </div>
       <div className="flex justify-between ">
         <div className="flex text-[25px] gap-4">
@@ -106,7 +111,7 @@ const FollowerPosts = () => {
             placeholder="Add a comment..."
             className="w-full outline-none pb-4 "
           />
-        </div >
+        </div>
       </div>
     </div>
   );
